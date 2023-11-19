@@ -160,8 +160,6 @@ const Home = () => {
                   <BsArrowRight className='group-hover:textwhite w-6 h-5' />
                 </Link>
 
-
-
               </div>
 
 
