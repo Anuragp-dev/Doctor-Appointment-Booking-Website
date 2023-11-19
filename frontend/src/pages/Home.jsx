@@ -8,6 +8,7 @@ import icon02 from '../assets/images/icon02.png';
 import icon03 from '../assets/images/icon03.png';
 import { BsArrowRight } from 'react-icons/bs';
 import About from '../components/About/About';
+import ServiceList from '../components/Services/ServiceList';
 const Home = () => {
   return (
     <>
@@ -186,6 +187,9 @@ const Home = () => {
                 <p className='text__para text-center'>World -class care for everyone. Our health system offers unmatched,
               expert health care</p>
               </div>
+
+              <ServiceList/>
+
             </div>
           </section>
           {/* about sction end */}
