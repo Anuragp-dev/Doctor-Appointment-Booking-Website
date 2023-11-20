@@ -178,7 +178,7 @@ const Home = () => {
       {/* about sction ends */}
 
 
-        {/* about sction starts */}
+        {/* service sction starts */}
 
           <section>
             <div className="container">
@@ -192,7 +192,22 @@ const Home = () => {
 
             </div>
           </section>
-          {/* about sction end */}
+          {/* service sction end */}
+
+          {/* feature section start */}
+
+       <section>
+        <div className="container">
+          <div className="flex items-center justify-between flex-col lg:flex-row">
+            {/* feature content */}
+            <div className="xl:w-[670px]">
+              <h2 className="heading"></h2>
+            </div>
+          </div>
+        </div>
+       </section>
+
+       {/* feature section end */}
 
 
 
