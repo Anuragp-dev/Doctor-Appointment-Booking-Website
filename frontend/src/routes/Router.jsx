@@ -6,7 +6,7 @@ import Contact from '../pages/Contact'
 import Login from '../pages/Login'
 import SignUp from '../pages/SignUp'
 import Doctors from '../pages/Doctors/Doctors'
-import DoctorsDetails from '../pages/Doctors/DoctorsDetails'
+import DoctorsDetails from '../pages/Doctors/DoctorDetails'
 
 
 const Router = () => {
