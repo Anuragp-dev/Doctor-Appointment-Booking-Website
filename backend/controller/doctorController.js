@@ -44,7 +44,7 @@ export const getSingleDoctor = async (req,res) => {
     }
 };
 
-
+//all doctors
 
 export const getAllDoctor = async (req,res) => {
     
