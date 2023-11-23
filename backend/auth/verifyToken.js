@@ -5,46 +5,51 @@ import User from '../models/UserSchema.js';
 
 
 
-export const authenticate = async (req ,res, next) => {
+export const authenticate = async (req, res, next) => {
     //get token from headers
     const authToken = req.headers.authorization
 
+
     //check token is exist or not
-    if(!authToken || !authToken.startsWith('Bearer')) {
-        return res.status(401).json({success:false, message:'No token, authorized denied'});
-    } 
+    if (!authToken || !authToken.startsWith('Bearer')) {
+        return res.status(401).json({ success: false, message: 'No token, authorized denied' });
+    }
 
     try {
-       const token = authToken.split(' ')[1];
+        const token = authToken.split(" ")[1];
 
-       //verify token
-       const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
-       req.userId = decoded.Id
-       req.role = decoded.role
+        //verify token
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
+
+        req.userId = decoded.id
+        req.role = decoded.role
+
 
         next(); // must call the next function
-        
+
     } catch (error) {
 
         if (error.name === 'TokenExpiredError') {
-            return res.status(401).json({message:"Token is expired , please login again"});
+            return res.status(401).json({ message: "Token is expired , please login again" });
         }
 
 
         return res
-        .status(401)
-        .json({success:false, message:"Invalid token"});
-        
+            .status(401)
+            .json({ success: false, message: "Invalid token" });
+
     }
 };
 
 
 
 
-export const restrict = roles=> async ( req, res, next ) => {
+export const restrict = roles => async (req, res, next) => {
 
-    const userId = req.userId;
+    const userId = req.userId
+
 
     let user;
 
@@ -59,14 +64,15 @@ export const restrict = roles=> async ( req, res, next ) => {
         user = doctor;
     }
 
-    if (!roles.includes(user?.role)) {
+
+
+    if (!roles.includes(user.role)) {
         return res
-        .status(401)
-        .json({success:false, message:"You are not authorized"});
-        
+            .status(401)
+            .json({ success: false, message: "You are not authorized"});
+
     }
 
-    
 
     next();
 
