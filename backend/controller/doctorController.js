@@ -16,7 +16,7 @@ export const updateDoctor = async (req,res) => {
 
 
 
-
+//delect doctor
 
 export const deleteDoctor = async (req,res) => {
     const id = req.params.id
