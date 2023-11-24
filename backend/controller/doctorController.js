@@ -30,7 +30,7 @@ export const deleteDoctor = async (req,res) => {
     }
 };
 
-
+//single user
 
 export const getSingleDoctor = async (req,res) => {
     const id = req.params.id
