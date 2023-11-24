@@ -1,6 +1,6 @@
 import Doctor from "../models/DoctorSchema.js";
 
-
+//update doctor
 
 export const updateDoctor = async (req,res) => {
     const id = req.params.id
