@@ -14,6 +14,6 @@ router
 .post(authenticate, restrict(['patient']), createReview);
 
 
-// export { router as reviewRoute };
+// export { router as reviewRoute }; both are same
 
 export default router;
