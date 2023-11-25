@@ -10,10 +10,10 @@ const router = express.Router();
 
 
 
-//nested route for get reviews of doctors
+//nested route for get reviews of doctors 
 router.use('/:doctorId/reviews', reviewRouter);
 
-
+//single doctor
 router.get('/:id', getSingleDoctor);
 router.get('/', getAllDoctor);
 router.put('/:id',authenticate, restrict(['doctor']), updateDoctor);
