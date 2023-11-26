@@ -1,5 +1,5 @@
 import express from 'express';
-import { deleteDoctor, getAllDoctor, getSingleDoctor, updateDoctor } from '../Controller/doctorController.js';
+import { deleteDoctor, getAllDoctor, getDoctorProfile, getSingleDoctor, updateDoctor } from '../Controller/doctorController.js';
 import { authenticate, restrict } from '../auth/verifyToken.js';
 import reviewRouter from './review.js';
 
@@ -10,17 +10,19 @@ const router = express.Router();
 
 
 
-//nested route for get reviews of doctors 
+//nested route
 router.use('/:doctorId/reviews', reviewRouter);
 
-//single doctor
+
 router.get('/:id', getSingleDoctor);
 router.get('/', getAllDoctor);
 router.put('/:id',authenticate, restrict(['doctor']), updateDoctor);
 router.delete('/:id',authenticate, restrict(['doctor']), deleteDoctor);
 
+router.get('/profile/me', authenticate, restrict(['doctor']), getDoctorProfile);
 
 
 
 
-export { router as doctorRoute};
+
+export { router as doctorRoute};         
