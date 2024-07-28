@@ -5,7 +5,7 @@ import Doctor from '../models/DoctorSchema.js';
 
 
 
-
+// verify token 
 const generateToken = (user) => {
     return jwt.sign(
         {
