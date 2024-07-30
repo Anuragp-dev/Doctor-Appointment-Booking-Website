@@ -6,7 +6,7 @@ import Doctor from "../models/DoctorSchema.js";
 
 
 
-//  user
+//  user controllers
 export const updateUser = async (req, res) => {
     const id = req.params.id
 
