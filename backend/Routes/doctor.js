@@ -10,7 +10,7 @@ const router = express.Router();
 
 
 
-//nested route
+//nested routes
 router.use('/:doctorId/reviews', reviewRouter);
 
 
