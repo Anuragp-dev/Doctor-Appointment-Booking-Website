@@ -4,7 +4,7 @@ import Booking from "../models/BookingSchema.js";
 
 
 
-
+// doctor controller 
 
 export const updateDoctor = async (req, res) => {
     const id = req.params.id
