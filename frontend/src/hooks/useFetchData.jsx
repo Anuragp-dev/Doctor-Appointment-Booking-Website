@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { token } from "../config";
 
 
-// usefetch hoo
+// usefetch hook
 const useFetchData = (url) => {
 
     const [ data, setData ] = useState([]);
