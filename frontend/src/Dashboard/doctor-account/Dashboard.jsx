@@ -1,5 +1,5 @@
 import React from 'react'
-// dashbord
+// Dashbord 
 const Dashboard = () => {
   return (
     <div>
