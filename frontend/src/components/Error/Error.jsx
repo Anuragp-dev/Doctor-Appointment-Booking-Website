@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-// error message 
+// error messages 
 
 const Error = ({errMessage}) => {
     return (
