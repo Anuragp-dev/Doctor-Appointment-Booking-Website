@@ -4,7 +4,7 @@ import { authenticate, restrict } from '../auth/verifyToken.js';
 import reviewRouter from './review.js';
 
 
-// router
+// routers
 
 const router = express.Router();
 
