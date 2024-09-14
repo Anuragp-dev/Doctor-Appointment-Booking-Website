@@ -3,7 +3,7 @@ import Review from "../models/ReviewSchema.js";
 
 
 
-// get all reviews 
+// get all reviews  
 
 
 export const getAllReviews = async ( req, res ) => {
