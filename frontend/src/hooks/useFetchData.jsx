@@ -11,6 +11,7 @@ const useFetchData = (url) => {
 
 
     useEffect(() => {
+        
         const fetchData = async () => {
 
             setLoading(true);
