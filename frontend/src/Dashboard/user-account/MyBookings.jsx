@@ -5,7 +5,7 @@ import Loading from "../../components/Loader/Loading";
 import Error from "../../components/Error/Error";
 
 
-
+//booking
 const MyBookings = () => {
 
     const { data: appointments, loading, error } = useFetchData(`${BASE_URL}/users/appointments/my-appointments`)
