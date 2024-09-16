@@ -11,7 +11,7 @@ import Error from '../../components/Error/Error';
 
 
 
-
+ 
 const MyAccount = () => {
 
   const { dispatch } = useContext(authContext);
