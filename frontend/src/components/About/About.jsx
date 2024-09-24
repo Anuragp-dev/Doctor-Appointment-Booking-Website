@@ -4,7 +4,7 @@ import aboutImg from '../../assets/images/about.png';
 import aboutCardImg from '../../assets/images/about-card.png';
 
 
-// about page 
+// about pages
 const About = () => {
   return (
     <>
