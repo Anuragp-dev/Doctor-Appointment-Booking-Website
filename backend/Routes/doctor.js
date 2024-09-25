@@ -11,7 +11,7 @@ const router = express.Router();
 
 
 //nested routes
-router.use('/:doctorId/reviews', reviewRouter);
+router.use('/:doctorId/reviews', reviewRouter); 
 
 
 router.get('/:id', getSingleDoctor);
