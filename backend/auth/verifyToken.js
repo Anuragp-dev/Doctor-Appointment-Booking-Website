@@ -4,7 +4,7 @@ import User from '../models/UserSchema.js';
 
 
 
-// verify middle ware  
+// verify middle waree  
 export const authenticate = async (req, res, next) => {
     //get token from headers 
     const authToken = req.headers.authorization
