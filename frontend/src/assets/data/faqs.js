@@ -1,4 +1,4 @@
-export const faqs = [
+export const faqs = [ 
   {  
     question: "What is your medical care?",
     content:
