@@ -7,7 +7,7 @@ import doctorImg03 from "../images/doctor-img03.png";
 export const doctors = [
   {
     id: "01", 
-    name: "Dr. Alfaz Ahmed",
+    name: "Dr. Alfaz Ahmed", 
     specialty: "Surgeon",
     avgRating: 4.8,
     totalRating: 272,
